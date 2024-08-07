@@ -32,3 +32,120 @@ The path to the driver executable must be set by the
 
 Chrome Browser Version: 127 
 
+----------------------------------------------------
+
+WebManager jar given bonia garcia 
+
+
+??????????????????????????????????????????????????
+Assignment -1 
+
+Use the 3 methods ( 
+1. using System.setProperty
+2. using WebDriverManger
+3. using Selenium Manager(4.13)
+
+launch 
+-> firfox Browser
+-> Edge BRowser 
+
+hint : driverexcuatble for firefox is geckodriver.exe
+       driverexcuatble for edge is msedgedriver.exe 
+	   
+	   send the programs or screenshots to below email id 
+riyazsirnotes@gmail.com
+
+????????????????????????????????????????????????????
+
+******************************************
+Methods in WebDriver (13)
+****************************************
+
+org.openqa.selenium 
+
+
+org.openqa.selenium.WebDriver.Navigation
+org.openqa.selenium.WebDriver.Options
+org.openqa.selenium.WebDriver.TargetLocator
+org.openqa.selenium.WebDriver.Timeouts
+org.openqa.selenium.WebDriver.Window
+
+
+
+findElement(By)
+findElements(By)
+
+
+
+
+
+manage()
+switchTo()
+
+------------------------------------------------------
+get(String):void 
+
+here String is the url of the app 
+
+this will launch the app whose URL is given as argument 
+
+----------------------------------------------------
+close():void 
+
+this will close a tab/window on which WebDriver focus is 
+
+----------------------------------------------------------
+quit():void 
+
+this will close all the tabs / windows open during that WebDriver session
+
+Q : close vs Quit
+
+
+Ans : 
+
+Close 										|			Quit
+
+close will close only one tab/window		|  quit will close all windows/tabs opened during that session
+on which WebDriver driver focus is			|
+
+
+close will not kill driverexcuatble         | quit will kill the driverexcuatble
+
+
+
+------------------------------------------------------------------------------------------
+
+getTitle():String
+
+this will return the title of the window or tab on which WebDriver focus 
+----------------------------------------------------------------------------------------------
+
+getCurrentUrl():String 
+
+this will return the URL present in Addrress bar  of the window or tab on which WebDriver focus 
+
+----------------------------------------------------------------------------------------------
+
+getPageSource() :String 
+
+this will page source of the window or tab on which WebDriver focus 
+
+--------------------------------------------------------------------------------------------
+
+getWindowHandle():String 
+
+--------------------------------------------------------------------------------------------
+
+getWindowHandles():Set<String> 
+
+
+--------------------------------------------------------------------------------------------
+navigate():Navigation
+
+back()
+forward()
+refresh()
+to(String)
+to(URL)
+
