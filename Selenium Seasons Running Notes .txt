@@ -72,15 +72,6 @@ org.openqa.selenium.WebDriver.Window
 
 
 
-findElement(By)
-findElements(By)
-
-
-
-
-
-manage()
-switchTo()
 
 ------------------------------------------------------
 get(String):void 
@@ -149,3 +140,145 @@ refresh()
 to(String)
 to(URL)
 
+----------------------------------------------
+manage():Options  ==> this method is used to deal with 
+
+cookies , waits / synchronization , window sizes 
+
+addCookie(Cookie)
+deleteAllCookies()
+deleteCookie(Cookie)
+deleteCookieNamed(String)
+getCookieNamed(String)
+getCookies()
+logs()
+timeouts()
+window() : Window
+
+fullscreen()
+getPosition()
+getSize()
+maximize()
+minimize()
+setPosition(Point)
+setSize(Dimension)
+
+
+--------------------------------------
+
+switchTo():TargetLocator ==> this method is used to swithch the control or focus of Webdriver 
+while handling tabs/windows , frames , alerts 
+ 
+activeElement()
+alert()
+defaultContent()
+frame(int)
+frame(String)
+frame(WebElement)
+newWindow(WindowType)
+parentFrame()
+window(String)
+
+--------------------------------------------------------------------------
+
+
+
+findElement(By):WebElement 
+findElements(By):List<WebElement>
+
+
+**********************************
+Locators in Selenium or 
+Locator Strategy 
+**********************************
+
+HTML Terminilogies 
+
+<tagName attribute1="value of attribute1" ...attributen="value of attributen>
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="003bj6">
+
+
+<tagName attribute1="value of attribute1" ...attributen="value of attributen>text on element</tagName>
+
+
+<a href="Register.php">New User Register Here</a>
+
+
+Locators based on attributes :
+id(String) ==> here String is nothing but value of attribute 
+name(String)
+className(String)
+
+Locators based on text present on link : 
+
+linkText(String) ==> text on WebElement
+partialLinkText(String) ==> subset of text on WebElement
+
+
+Locators based on attribute and text :
+
+cssSelector(String)
+xpath(String)
+
+Locators based on  tagName: ==> not prefered to locate a single WebElement
+tagName(String)
+
+********************************************************
+Methods in WebElement (16 +5 )
+********************************************************
+
+
+
+findElement(By)
+findElements(By)
+
+
+getLocation()
+getRect()
+getSize()
+getTagName()
+
+isDisplayed()
+isEnabled()
+isSelected()
+
+submit()
+
+-----------------------------------------------
+sendKeys(CharSequence...):void 
+
+this will type the text on a WebElement
+
+------------------------------------------------
+
+click() : void 
+
+---------------------------------------------------
+
+clear() : void 
+
+text or textarea 
+
+-------------------------------------------------------
+
+getText(): String 
+
+
+--------------------------------------------------------
+getAttribute(String):String 
+
+case 1 : attribute present with value 
+o/p : value of attribute 
+
+case 2: attribute not present 
+o/p : null 
+
+case 3: attribute is present but no vlaue is assigned 
+o/p : true 
+
+sometimes empty String
+
+
+--------------------------------------
+getCssValue(String): 

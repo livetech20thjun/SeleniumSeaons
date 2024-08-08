@@ -13,6 +13,8 @@ public class MethodsInWebDriver3 {
 		
 		driver.get("https://adactinhotelapp.com/");
 		
+		driver.manage().window().maximize();
+		
 		driver.findElement(By.linkText("New User Register Here")).click();
 		
 		Thread.sleep(3000);
