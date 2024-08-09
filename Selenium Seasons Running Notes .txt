@@ -230,20 +230,12 @@ Methods in WebElement (16 +5 )
 
 
 
-findElement(By)
-findElements(By)
 
 
-getLocation()
-getRect()
-getSize()
-getTagName()
 
-isDisplayed()
-isEnabled()
-isSelected()
 
-submit()
+
+
 
 -----------------------------------------------
 sendKeys(CharSequence...):void 
@@ -281,4 +273,51 @@ sometimes empty String
 
 
 --------------------------------------
-getCssValue(String): 
+getCssValue(String): String
+
+-------------------------------------------
+
+getLocation():Point 
+	getX():int
+	getY():int 
+getSize(): Dimension
+	getHeight():int 
+	getWidth():int
+getRect():Rectangle
+	getHeight()
+	getWidth()
+	getX()
+	getY()
+
+-------------------------------------------------
+
+isDisplayed():boolean
+isEnabled():boolean
+isSelected():boolean
+
+----------------------------------------------------
+
+getTagName():String 
+-----------------------------------------------------
+
+submit():void 
+
+-----------------------------------------------------
+
+findElement(By):WebElement
+findElements(By):List<WebElement> 
+
+----------------------------------------------------------------
+
+13 + 8 + 16 
+
+
+-====================================-
+Links Testing
+-====================================-
+
+tagName => a
+
+mandatory attribute => href 
+
+optional attributes ==> id ,name ,class etc..
