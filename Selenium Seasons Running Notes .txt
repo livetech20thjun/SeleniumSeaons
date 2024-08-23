@@ -321,3 +321,126 @@ tagName => a
 mandatory attribute => href 
 
 optional attributes ==> id ,name ,class etc..
+***************************************
+Dropdown Testing 
+***************************************
+
+
+1) using Conventional way using SendKeys 
+
+
+
+2) using Select class (org.openqa.selenium.support.ui)
+
+
+selectByIndex(int) : void  ==> here int is index of the item starting zero 
+selectByValue(String) : void ==> string is value attribute's value 
+selectByVisibleText(String): void ==> String is the text on the option 
+
+tagName = select 
+optional attributes ==> id ,name ,class etc..
+
+items in dropdown 
+
+tagName = option 
+mandatory attribute = value 
+
+
+
+
+????????????????????????????????????????????????
+Assignment - 2
+
+in https://www.facebook.com/ 
+
+click on "Create new account" button 
+
+and select your date of birth 
+
+hint : use Select class methods 
+
+and send it to below email
+
+riyazsirnotes@gmail.com 
+
+????????????????????????????????????????????????
+
+
+
+org.openqa.selenium.support.ui.UnexpectedTagNameException: 
+Element should have been "select" but was "input"
+
+Reason : Select object is only for dropdown  having select tagName
+
+Solution : should be handing without Select class methods 
+
+
+
+ org.openqa.selenium.ElementClickInterceptedException: 
+ element click intercepted: Element <span class="mbsc-select-icon mbsc-select-icon-outline mbsc-ltr mbsc-ios mbsc-select-icon-stacked mbsc-icon mbsc-ios">...</span> is not clickable at point (1330, 365). Other element would receive the click: <span class="mbsc-textfield-tags mbsc-ios mbsc-ltr  mbsc-textfield mbsc-textfield-outline mbsc-select mbsc-textfield-stacked mbsc-textfield-outline-stacked mbsc-textarea">...</span>
+ 
+ 
+ (//span[text()='Please select...']/parent::span/following-sibling::span)[2]
+ 
+ 
+ -------------------------------------
+ Screenshot
+ 
+ 
+ TakesScreenshot(I) 
+ 
+ getScreenshotAs(OutputType<X>):X
+ 
+ OutputType.class
+ 
+	BASE64 : OutputType<String>
+	BYTES : OutputType<byte[]>
+	FILE : OutputType<File>
+	
+FileUtils (Apache Commons IO 2.16.1 API)
+
+commons-io-2.16.1-bin.zip
+
+https://jenkov.com/tutorials/java-internationalization/simpledateformat.html
+
+
+******************************************
+Waits Concepts
+or
+Synchronization 
+*******************************************
+
+org.openqa.selenium.NoSuchElementException: 
+
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+
+Hard Wait using Thread.sleep(); ==> not prefered in real time 
+
+Implicit Wait :
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+
+this is implied for all driver.findElement statement 
+
+Explicit Wait :
+
+WebDriverWait 
+
+Wait(I) :
+
+until(Function<? super F, T>)
+
+WebDriverWait(C) :
+
+	WebDriverWait(WebDriver, Duration)
+	WebDriverWait(WebDriver, Duration, Duration)
+	WebDriverWait(WebDriver, Duration, Duration, Clock, Sleeper)
+	
+ExpectedConditions
+
+	invisibilityOf(WebElement)
+	invisibilityOfAllElements(List<WebElement>)
+	invisibilityOfAllElements(WebElement...)
+	invisibilityOfElementLocated(By)
+	invisibilityOfElementWithText(By, String)
