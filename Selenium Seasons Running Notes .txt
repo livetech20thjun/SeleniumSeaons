@@ -444,3 +444,85 @@ ExpectedConditions
 	invisibilityOfAllElements(WebElement...)
 	invisibilityOfElementLocated(By)
 	invisibilityOfElementWithText(By, String)
+	
+----------------------------------------------------------
+how to test or find all links in a page ?
+
+no of links 
+
+<a href="ForgotPassword.php">Forgot Password?</a>
+<a href="Register.php">New User Register Here</a>
+:
+:
+<a href="http://www.adactin.com">Adactin.com</a>
+
+hint : to capture all links in a page 
+
+tagname is common i.e "a" 
+
+findElements(By):List<WebElement>
+
+=======================================================================
+Xpath writing technqiues 
+=======================================================================
+
+Xpath  means XML path 
+
+it is a query lang to find XML / HTML nodes 
+
+						Xpath
+						
+						
+		absolute						Relative
+
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input		
+						
+
+Relative Xpath writing technqiues :
+
+HTML Terminilogies 
+
+<tagName attribute1="value of attribute1" ...attributen="value of attributen>
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="003bj6">
+
+
+<tagName attribute1="value of attribute1" ...attributen="value of attributen>text on element</tagName>
+
+
+<a href="Register.php">New User Register Here</a>
+
+
+1) Xpath based on tagname and attributes 
+
+//tagname[@attribute='value of attribute']
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="b3qg9l">
+
+//input[@id='username']						
+						
+
+2) Xpath based on tagName and text on element 
+
+//tagname[text()='text on element']
+
+<a href="Register.php">New User Register Here</a>
+
+//a[text()='New User Register Here']
+
+
+3) Xpath using contains functions
+
+//tagname[contains(@attribute,'subset of value of attribute')]
+
+//tagName[contains(text(),'subest of text on element')]
+
+//a[contains(text(),'Register Here')]
+
+<img src="img/ios-button.png">
+
+//img[contains(@src,'ios-button')]
+
