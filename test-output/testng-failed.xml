@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="aug27th.AdactinHotelApp2">
+      <class name="aug28th.DragAndDrop">
         <methods>
-          <include name="loginTest"/>
-          <include name="changePasswordTest"/>
-          <include name="setUp"/>
+          <include name="dragAndDropTest1"/>
           <include name="teardown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- aug27th.AdactinHotelApp2 -->
+      </class> <!-- aug28th.DragAndDrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

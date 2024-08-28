@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-27T09:01:21 IST" name="Default suite" finished-at="2024-08-27T09:01:35 IST" duration-ms="14614">
+  <suite started-at="2024-08-28T08:49:04 IST" name="Default suite" finished-at="2024-08-28T08:49:11 IST" duration-ms="7076">
     <groups>
     </groups>
-    <test started-at="2024-08-27T09:01:21 IST" name="Default test" finished-at="2024-08-27T09:01:35 IST" duration-ms="14614">
-      <class name="aug27th.ValidateLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:aug27th.ValidateLogin@2fd1433e]" started-at="2024-08-27T09:01:21 IST" name="setUp" finished-at="2024-08-27T09:01:31 IST" duration-ms="10146" status="PASS">
+    <test started-at="2024-08-28T08:49:04 IST" name="Default test" finished-at="2024-08-28T08:49:11 IST" duration-ms="7076">
+      <class name="aug28th.DragAndDrop">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:aug28th.DragAndDrop@2fd1433e]" started-at="2024-08-28T08:49:04 IST" name="setUp" finished-at="2024-08-28T08:49:07 IST" duration-ms="3292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginTest1()[pri:0, instance:aug27th.ValidateLogin@2fd1433e]" started-at="2024-08-27T09:01:31 IST" name="validateLoginTest1" finished-at="2024-08-27T09:01:32 IST" duration-ms="1049" status="PASS">
+        <test-method signature="dragAndDropTest1()[pri:0, instance:aug28th.DragAndDrop@2fd1433e]" started-at="2024-08-28T08:49:07 IST" name="dragAndDropTest1" finished-at="2024-08-28T08:49:08 IST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginTest1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:aug27th.ValidateLogin@2fd1433e]" started-at="2024-08-27T09:01:32 IST" name="teardown" finished-at="2024-08-27T09:01:35 IST" duration-ms="3383" status="PASS">
+        </test-method> <!-- dragAndDropTest1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:aug28th.DragAndDrop@2fd1433e]" started-at="2024-08-28T08:49:08 IST" name="teardown" finished-at="2024-08-28T08:49:11 IST" duration-ms="3293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- aug27th.ValidateLogin -->
+      </class> <!-- aug28th.DragAndDrop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

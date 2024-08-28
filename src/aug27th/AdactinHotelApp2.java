@@ -39,7 +39,7 @@ public class AdactinHotelApp2 {
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,enabled=false)
 	public void forgotPasswordTest()
 	{
 		

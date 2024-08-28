@@ -1,34 +1,36 @@
-package aug27th;
+package aug28th;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-public class ValidateLogin {
+public class DragAndDrop {
 	
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp()
 	{
 		driver=new ChromeDriver();
-		driver.get("https://adactinhotelapp.com/");
+		driver.get("https://jqueryui.com/droppable/");
 		driver.manage().window().maximize();
 	}
 	
 	@Test
-	public void validateLoginTest1()
+	public void dragAndDropTest1() throws InterruptedException
 	{
 		
-		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("reyaz0806");
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("reyaz123");
-		driver.findElement(By.xpath("//input[@id='login']")).click();
+		driver.switchTo().frame(0);
 		
-		Assert.assertEquals(driver.getTitle(), "Adactin.com - Search Hotel");
+		Actions action=new Actions(driver);
+		
+		action.dragAndDrop(driver.findElement(By.xpath("//div[@id='draggable']")), driver.findElement(By.xpath("//div[@id='droppable']")))
+				 .build()
+				 .perform();
 		
 		
 	}
@@ -39,4 +41,5 @@ public class ValidateLogin {
 		Thread.sleep(3000);
 		driver.quit();
 	}
+
 }

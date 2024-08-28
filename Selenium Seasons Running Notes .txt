@@ -541,4 +541,97 @@ and send it to riyazsirnotes@gmail.com
 
 ???????????????????????????????????????????????????????????????????
 
+Parameters for @Test annotations
 
+priority takes integer value 
+
+dependsOnMethods takes string or Strings 
+i.e only String dependsOnMethods="loginTest"
+i.e Strings dependsOnMethods={"loginTest","registrationTest"}
+
+enabled takes boolean 
+
+******************************************************
+Miscellenous Actions
+******************************************************
+
+Action(I):
+ 
+perform():void
+
+Actions  (org.openqa.selenium.interactions)
+
+new Actions(WebDriver);
+
+
+moveToElement(WebElement):Actions
+
+Xpath using Predicate :
+
+here means index starts from 1 
+
+(//a[contains(text(),'Personal')])[1]
+
+
+or
+
+//li[@data-megamenu]/a[contains(text(),'Personal')]
+
+---------------------------
+  .build() ==> to integrate more than one action
+  
+  .perform(); ==> for execution
+  
+-----------------------------------
+
+click()
+click(WebElement)
+
+-------------------------------------
+
+dragAndDrop(WebElement, WebElement)
+dragAndDropBy(WebElement, int, int)
+
+
+
+org.openqa.selenium.NoSuchElementException:
+ no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='draggable']"}
+ 
+ 
+ Reason 1: locator strategy or loactor is wrong 
+ 
+ Solution 1: correct the locator 
+ 
+ Reason 2: there may be a lag from server side or app (synchronization problem)
+ 
+ Solution 2: use proper wait mechanism 
+ 
+ 
+ Reason 3: if element present in frame 
+ 
+ Solution 3 : switch the control/focus to that frame 
+ 
+ 
+?????????????????????????????????????????????????????????????
+Assignment 
+
+in https://emicalculator.net/
+
+Drag Home Loan Amount 75 lakhs
+
+Drag Interest Rate 12.5
+
+Drag Loan Tenure 15 years 
+
+hint : use below Actions class method 
+
+dragAndDropBy(WebElement, int, int)
+
+xpath : //div[@id='loanamountslider']/span[@tabindex='0']
+
+and send it to below email id
+
+riyazsirnotes@gmail.com 
+
+
+???????????????????????????????????????????????????????????
