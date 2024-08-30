@@ -1,41 +1,41 @@
-package aug28th;
+package aug30th;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class DragAndDrop {
+public class FrameHandling {
 	
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp()
 	{
 		driver=new ChromeDriver();
-		driver.get("https://jqueryui.com/droppable/");
+		driver.get("https://www.angelfire.com/super/badwebs/");
 		driver.manage().window().maximize();
 	}
 	
 	@Test
-	public void dragAndDropTest1() throws InterruptedException
+	public void frameHandlingTest1() throws InterruptedException
 	{
 	
-		 //driver.switchTo().frame(0);
-		//driver.switchTo().frame("demo-frame");
+		driver.switchTo().frame("main");
 		
-		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='demo-frame']")));
+		driver.findElement(By.xpath("//a[contains(@href,'monkeyspaw')]")).click();
 		
+		Thread.sleep(3000);
 		
-		Actions action=new Actions(driver);
+		driver.switchTo().defaultContent();
 		
-		action.dragAndDrop(driver.findElement(By.xpath("//div[@id='draggable']")), driver.findElement(By.xpath("//div[@id='droppable']")))
-				 .build()
-				 .perform();
+		driver.switchTo().frame("contents");
 		
+		driver.findElement(By.xpath("//font[contains(text(),'Hate Frames Page')]/parent::a")).click();
+		
+		Thread.sleep(3000);
 		
 	}
 

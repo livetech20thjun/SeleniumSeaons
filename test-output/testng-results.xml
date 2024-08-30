@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-29T08:57:04 IST" name="Default suite" finished-at="2024-08-29T08:57:29 IST" duration-ms="24900">
+  <suite started-at="2024-08-30T08:57:05 IST" name="Default suite" finished-at="2024-08-30T08:57:12 IST" duration-ms="6909">
     <groups>
     </groups>
-    <test started-at="2024-08-29T08:57:04 IST" name="Default test" finished-at="2024-08-29T08:57:29 IST" duration-ms="24900">
-      <class name="aug29th.MultipleWindowHandle2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:aug29th.MultipleWindowHandle2@2fd1433e]" started-at="2024-08-29T08:57:04 IST" name="setUp" finished-at="2024-08-29T08:57:08 IST" duration-ms="3850" status="PASS">
+    <test started-at="2024-08-30T08:57:05 IST" name="Default test" finished-at="2024-08-30T08:57:12 IST" duration-ms="6909">
+      <class name="aug30th.AlertHandling">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:aug30th.AlertHandling@2fd1433e]" started-at="2024-08-30T08:57:05 IST" name="setUp" finished-at="2024-08-30T08:57:08 IST" duration-ms="3215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="multipleWindowHandleTest1()[pri:0, instance:aug29th.MultipleWindowHandle2@2fd1433e]" started-at="2024-08-29T08:57:08 IST" name="multipleWindowHandleTest1" finished-at="2024-08-29T08:57:26 IST" duration-ms="17524" status="PASS">
+        <test-method signature="alertHandlingTest1()[pri:0, instance:aug30th.AlertHandling@2fd1433e]" started-at="2024-08-30T08:57:08 IST" name="alertHandlingTest1" finished-at="2024-08-30T08:57:09 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipleWindowHandleTest1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:aug29th.MultipleWindowHandle2@2fd1433e]" started-at="2024-08-29T08:57:26 IST" name="teardown" finished-at="2024-08-29T08:57:29 IST" duration-ms="3492" status="PASS">
+        </test-method> <!-- alertHandlingTest1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:aug30th.AlertHandling@2fd1433e]" started-at="2024-08-30T08:57:09 IST" name="teardown" finished-at="2024-08-30T08:57:12 IST" duration-ms="3370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- aug29th.MultipleWindowHandle2 -->
+      </class> <!-- aug30th.AlertHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
