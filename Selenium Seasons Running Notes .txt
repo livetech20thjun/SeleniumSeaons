@@ -786,4 +786,80 @@ Object... ==> var agrs
 org.openqa.selenium.ScriptTimeoutException: script timeout
  
 
+**************************************************************
+Synchronization in Selenium
+or 
+Waits in Selenium
+**************************************************************
+
+org.openqa.selenium.NoSuchElementException: no such element: 
+Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+
+Reason : because of Synchronization means page got loaded slowly 
+
+Solution : use wait mechanism 
+----------------------------------------------------------------------
+mechanism 1 : using Hard wait i.e using Thread.sleep(3000);
  
+----------------------------------------------------------------------
+mechanism 2 :  using implicit wait 
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+Here , in this mechanism WebDriver will wait upto 30 seconds ,
+
+if the element is found in DOM for e.g within 2 seconds then it won't wait for remaining 28 seconds
+
+This is impiled for all driver.findElement statements  only .
+
+
+--> to wait until the whole page is loaded 
+
+pageLoadTimeout(Duration)
+
+-------------------------------------------------------------------------
+
+java.lang.AssertionError: expected [5] but found [2+3]
+
+mechanism 3: Explicit wait using WebDriverWait class 
+
+Wait(I): 
+
+until(Function<? super F, T>)
+
+ExpectedConditions(C) : 
+
+WebDriverWait(C):
+
+constructors : 
+
+WebDriverWait(WebDriver, Duration)  ==> prefered
+
+WebDriverWait(WebDriver, Duration, Duration)
+WebDriverWait(WebDriver, Duration, Duration, Clock, Sleeper)
+
+
+------------------------------------------------------
+
+mechanism 4: Fluent wait using FluenWait class 
+
+3 improvement can be done for Eplicit Wait 
+
+-> WebDriverWait(WebDriver, long)  in older version of selenium
+
+here long means always seconds 
+
+--> polling time , is always 500 milliseconds using Explicit wait 
+
+--> ignoring some exception 
+
+FluentWait<T>(C):
+
+FluentWait(T) : prefered
+FluentWait(T, Clock, Sleeper)
+
+withTimeout(Duration)
+
+pollingEvery(Duration)
+
+ignoring(Class<? extends Throwable>)
