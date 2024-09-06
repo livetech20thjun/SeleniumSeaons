@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-04T08:58:41 IST" name="Default suite" finished-at="2024-09-04T08:58:53 IST" duration-ms="11371">
+  <suite started-at="2024-09-06T08:46:30 IST" name="Default suite" finished-at="2024-09-06T08:46:37 IST" duration-ms="7109">
     <groups>
     </groups>
-    <test started-at="2024-09-04T08:58:41 IST" name="Default test" finished-at="2024-09-04T08:58:53 IST" duration-ms="11371">
-      <class name="sep4th.WaitsDemo3">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sep4th.WaitsDemo3@57af006c]" started-at="2024-09-04T08:58:41 IST" name="setUp" finished-at="2024-09-04T08:58:44 IST" duration-ms="2453" status="PASS">
+    <test started-at="2024-09-06T08:46:30 IST" name="Default test" finished-at="2024-09-06T08:46:37 IST" duration-ms="7109">
+      <class name="sep6th.Screenshot3">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sep6th.Screenshot3@57af006c]" started-at="2024-09-06T08:46:30 IST" name="setUp" finished-at="2024-09-06T08:46:34 IST" duration-ms="3526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="waitsTest1()[pri:0, instance:sep4th.WaitsDemo3@57af006c]" started-at="2024-09-04T08:58:44 IST" name="waitsTest1" finished-at="2024-09-04T08:58:49 IST" duration-ms="5490" status="PASS">
+        <test-method signature="screenshotTest1()[pri:0, instance:sep6th.Screenshot3@57af006c]" started-at="2024-09-06T08:46:34 IST" name="screenshotTest1" finished-at="2024-09-06T08:46:34 IST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- waitsTest1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sep4th.WaitsDemo3@57af006c]" started-at="2024-09-04T08:58:49 IST" name="teardown" finished-at="2024-09-04T08:58:53 IST" duration-ms="3400" status="PASS">
+        </test-method> <!-- screenshotTest1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sep6th.Screenshot3@57af006c]" started-at="2024-09-06T08:46:34 IST" name="teardown" finished-at="2024-09-06T08:46:37 IST" duration-ms="3215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- sep4th.WaitsDemo3 -->
+      </class> <!-- sep6th.Screenshot3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
