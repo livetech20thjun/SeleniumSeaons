@@ -952,3 +952,36 @@ createNewFile():boolean
 
 
 mkdir():boolean ==> this will create a folder 
+
+
+*********************************************************************
+Xpath writing techniques 
+
+Xpath axes 
+
+
+//div[text()='Make Money with Us']/parent::div
+
+*********************************************************************
+CSS Selector
+
+
+HTML Terminilogies 
+
+<tagName attribute1="value of attribute1" ...attributen="value of attributen>
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="003bj6">
+
+
+<tagName attribute1="value of attribute1" ...attributen="value of attributen>text on element</tagName>
+
+
+<a href="Register.php">New User Register Here</a>
+
+
+tagname#value of id attribute
+input#username
+tagname[attribute='value of attribute']
+input[name='firstname']
+tagname.value of class attribute
+input.login_input
